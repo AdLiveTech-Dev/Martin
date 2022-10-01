@@ -3,6 +3,9 @@ body {
   padding: 0;
   font-family: 'IBM Plex Sans', sans-serif;
 }
+.box-inner-item.disable-cursor-hide {
+  pointer-events: none;
+}
 .box-wrrper-item {
   display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
@@ -11,7 +14,7 @@ body {
 .item-content {
   background-color: #237b37;
   margin: 5px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   color: #fff;
   border: 4px solid transparent;
 }
@@ -83,7 +86,7 @@ body {
 .counter-page {
   text-align: right;
   margin-right: 4px;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 .dots-box span {
   width: 10px;
@@ -111,9 +114,9 @@ body {
   min-height: 768px;
   margin: 10px;
 }
-.side-bar-button a:first-child {
+/* .side-bar-button a:first-child {
   margin-bottom: 0px;
-}
+} */
 .Content-logo-screen h3 {
   font-size: 1.6rem;
   color: #091a43;
@@ -135,13 +138,13 @@ body {
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
-  min-height: 1085px;
-    max-height: 1085px;
+  min-height: 939px;
+  max-height: 944px;
 }
 .center-strip-main {
-  min-height: 1043px;
+  min-height: 861px;
   height: 100%;
-  max-height: 1043px;
+  max-height: 860px;
 }
 .side-bar-button a {
   writing-mode: vertical-rl;
@@ -149,22 +152,28 @@ body {
   background-color: #fb931e;
   color: #fff;
   text-decoration: none;
-  height: 100%;
+  height: auto;
   border-radius: 30px;
   text-align: center;
   transform: rotate(180deg);
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 600;
+  /* max-height: 100%; */
+  /* min-height: fit-content; */
+  /* width: 100%; */
+  /* max-width: 24px; */
 }
 .side-bar-button a.first-button-side {
   background-color: #e5e5e5;
   color: #000000;
+  order: 3;
 
 }
 .side-bar-button.right-side-button .fourth-button-side {
   transform: rotate(0deg);
   background-color: #237b37;
+  margin-bottom: 0px;
 }
 .side-bar-button.right-side-button {
   left: auto;
@@ -173,13 +182,12 @@ body {
 .side-bar-button {
   position: absolute;
   left: -70px;
-  display: flex;
-  flex-direction: column-reverse;
   height: 100%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
 }
 .side-bar-button a.second-button-side {
-  height: 30%;
+  /* height: 30%; */
   background-color: #dc3e14;
 }
 .item-box-one .box-wrrper-item{
@@ -188,10 +196,13 @@ body {
     flex-direction: column-reverse;
     display: flex;
 }
+.side-bar-button.right-side-button {
+  grid-template-rows: 100%;
+}
 .item-content img {
   width: 100%;
   height: 100%;
-  min-height: 102px;
+  min-height: 95px;
   max-height: 94px;
   object-fit: contain;
   max-width: 70px;
@@ -339,7 +350,7 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 382px;
+  height: 255px;
   object-fit: cover;
   }
   
@@ -425,14 +436,17 @@ body {
   height: 44px;
   background: linear-gradient(90deg, rgba(9,26,67,1) 46%, rgba(34,121,54,1) 100%);
 }
+.accordion-container .accordion-title.logo-view-screen {
+  pointer-events: none;
+}
 .data-content-tab-view {
   padding: 40px 12px;
   background-color: #ededed;
   margin: 7px;
   display: flex;
   flex-direction: column;
-  max-height: 950px;
-  min-height: 950px;
+  max-height: 768px;
+  min-height: 768px;
 }
 .build-warrper {
   display: flex;
@@ -479,7 +493,9 @@ body {
 .discover-wrrper {
   display: flex;
   align-items: center;
+  -webkit-align-items:center;
   justify-content: space-between;
+  -webkit-justify-content:space-between;
   height: 80%;
   flex-direction: column-reverse;
   padding: 30px 0px;
@@ -488,6 +504,7 @@ body {
   height: 40%;
   display: flex;
   align-items: center;
+  -webkit-align-items:center;
 }
 .discover-label h2 {
   margin: 0px;
@@ -702,5 +719,34 @@ body {
 .accordion-container {
   margin-top: 10px;
 }
-
+.side-bar-button a.accordion-title:first-child {
+  background-color: #fef276;
+  color: #000000;
+}
+.Top-button-view .side-bar-button a.fourth-button-side {
+  background-color: #237b37;
+}
+.accordion-container a.accordion-title {
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  height: auto;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+}
+.accordion-container .accordion-title.yellow-view {
+  background-color: #fef276;
+  color: #000;
+}
+.accordion-container .accordion-title.organge-view{
+  background-color: #fb931e;
+}
+.accordion-container .accordion-title.gray-view{
+  background-color: #e5e5e5;
+}
 }
