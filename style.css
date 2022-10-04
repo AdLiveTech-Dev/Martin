@@ -480,15 +480,29 @@ body {
   height: 44px;
   background-color: #ffffffad;
   text-align: center;
-  line-height: 64px;
+  line-height: 54px;
+}
+.item-content h6{
+  font-size: 16px;
+  margin: 0;
+}
+.first-logo-m.box-inner-item.disable-cursor-hide img {
+  min-height: 75px;
+  max-height: 75px;
 }
 .arrow-view svg {
   fill: #fff;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 .bottom-srtip-main .arrow-view {
   transform: rotate(180deg);
+}
+.box-inner-item.disable-cursor-hide .item-content {
+  background-color: #e5e5e5 !important;
+}
+.box-inner-item.disable-cursor-hide.tabs__link.is-active .item-content{
+  background-color: #e5e5e5 !important;
 }
 .discover-wrrper {
   display: flex;
@@ -496,15 +510,29 @@ body {
   -webkit-align-items:center;
   justify-content: space-between;
   -webkit-justify-content:space-between;
-  height: 80%;
+  height: 93.5%;
   flex-direction: column-reverse;
   padding: 30px 0px;
 }
+.build-label.Market-label .arrow-view {
+  margin-left: -10px;
+}
+.left-view-side-item .dilver-label {
+  height: 37%;
+}
+.build-label.Market-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .discover-label {
-  height: 40%;
+  height: 41%;
   display: flex;
   align-items: center;
   -webkit-align-items:center;
+}
+.left-view-side-item .dilver-label .arrow-view {
+  margin-right: 4px;
 }
 .discover-label h2 {
   margin: 0px;
@@ -512,8 +540,22 @@ body {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 }
+.Build-label {
+  height: 24%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.Build-label h2 {
+  margin: 0px;
+  font-weight: 400;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: #fff;
+}
 .dilver-label {
-  height: 46%;
+  height: 48%;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
