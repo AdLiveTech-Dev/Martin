@@ -14,7 +14,7 @@ body {
 .item-content {
   background-color: #237b37;
   margin: 5px;
-  padding: 10px 10px;
+  padding: 10px 1px;
   color: #fff;
   border: 4px solid transparent;
 }
@@ -156,7 +156,7 @@ body {
   border-radius: 30px;
   text-align: center;
   transform: rotate(180deg);
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   font-size: 18px;
   font-weight: 600;
   /* max-height: 100%; */
@@ -168,6 +168,7 @@ body {
   background-color: #e5e5e5;
   color: #000000;
   order: 3;
+  margin-top: 7px;
 
 }
 .side-bar-button.right-side-button .fourth-button-side {
@@ -182,13 +183,15 @@ body {
 .side-bar-button {
   position: absolute;
   left: -70px;
-  height: 100%;
+  height: 97%;
   display: grid;
-  grid-template-rows: 40% 20% 40%;
+  grid-template-rows: 42.5% 15% 43.5%;
+  padding-top: 10px;
 }
 .side-bar-button a.second-button-side {
   /* height: 30%; */
   background-color: #dc3e14;
+  margin: 8px 0px 2px;
 }
 .item-box-one .box-wrrper-item{
   grid-template-rows: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
@@ -197,7 +200,15 @@ body {
     display: flex;
 }
 .side-bar-button.right-side-button {
-  grid-template-rows: 100%;
+  grid-template-rows: 97.8%;
+  padding-top: 10px;
+  height: 100%;
+}
+.box-inner-item.disable-cursor-hide.change-green-color .item-content {
+  background-color: #237b37 !important;
+}
+.box-inner-item.disable-cursor-hide.blue-color-box .item-content {
+  background-color: #091a43 !important;
 }
 .item-content img {
   width: 100%;
